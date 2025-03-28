@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetterDrive - Create and save letters to Google Drive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .editor-content {
+      font-family: 'Source Sans Pro', sans-serif;
+      min-height: 65vh;
+    }
+    .toolbar-button {
+      transition: background-color 0.2s;
+    }
+    .toolbar-button:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    .toolbar-button.active {
+      background-color: rgba(26, 115, 232, 0.1);
+      color: #1a73e8;
+    }
+    .letter-list-item {
+      transition: background-color 0.2s;
+    }
+    .letter-list-item:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    .letter-list-item.active {
+      background-color: rgba(26, 115, 232, 0.1);
+      border-left: 3px solid #1a73e8;
+    }
+    [contenteditable] {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
